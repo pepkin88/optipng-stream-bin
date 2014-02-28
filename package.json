@@ -1,0 +1,57 @@
+{
+    "name": "optipng-stream-bin",
+    "version": "0.0.1",
+    "description": "Wrapper around optipng-stream that makes it seamlessly available as a local dependency on OS X, Linux, FreeBSD and Windows"
+    "keywords": [
+	"png",
+	"compress",
+	"minify",
+	"optimize",
+	"img",
+	"image",
+	"stream"
+    ],
+    "author": {
+	"name": "Amey Parulekar",
+	"email": "amey@wirywolf.com",
+	"url": "http://wirywolf.com"
+    },
+    "maintainers": [
+	{
+	    "name": "Amey Parulekar",
+	    "email": "amey@wirywolf.com",
+	    "url": "http://wirywolf.com"
+	}
+    ],
+    "main": "lib/index",
+    "bin": {
+	"optipng-stream": "bin/optipng-stream.js"
+    },
+    "repository": {
+	"type": "git",
+	"url": "git://github.com/ameyp/optipng-stream-bin.git"
+    },
+    "scripts": {
+	"test": "mocha",
+	"postinstall": "node lib/check.js"
+    },
+    "engines": {
+	"node": ">=0.10.0"
+    },
+    "licenses": [
+	{
+	    "type": "BSD"
+	}
+    ],
+    "dependencies": {
+	"bin-wrapper": "~0.1.3",
+	"chalk": "~0.4.0"
+    },
+    "devDependencies": {
+	"mocha": "*"
+    },
+    "files": [
+	"bin",
+	"lib"
+    ]
+}
