@@ -1,7 +1,7 @@
 {
     "name": "optipng-stream-bin",
     "version": "0.0.1",
-    "description": "Wrapper around optipng-stream that makes it seamlessly available as a local dependency on OS X, Linux, FreeBSD and Windows"
+    "description": "Wrapper around optipng-stream that makes it seamlessly available as a local dependency on OS X, Linux, FreeBSD and Windows",
     "keywords": [
 	"png",
 	"compress",
@@ -32,8 +32,7 @@
 	"url": "git://github.com/ameyp/optipng-stream-bin.git"
     },
     "scripts": {
-	"test": "mocha",
-	"postinstall": "node lib/check.js"
+	"test": "mocha"
     },
     "engines": {
 	"node": ">=0.10.0"
@@ -44,11 +43,14 @@
 	}
     ],
     "dependencies": {
-	"bin-wrapper": "~0.1.3",
-	"chalk": "~0.4.0"
+	"tmp": "*",
+	"optipng-bin": "*",
+	"concat-stream": "*"
     },
     "devDependencies": {
-	"mocha": "*"
+	"mocha": "*",
+	"rimraf": "*",
+	"multipipe": "*"
     },
     "files": [
 	"bin",
