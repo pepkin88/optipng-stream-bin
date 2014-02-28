@@ -1,7 +1,7 @@
 {
     "name": "optipng-stream-bin",
     "version": "0.0.1",
-    "description": "Wrapper around optipng-stream that makes it seamlessly available as a local dependency on OS X, Linux, FreeBSD and Windows",
+    "description": "Wrapper around optipng-bin for reading PNG data from STDIN and writing optimized output to STDOUT",
     "keywords": [
 	"png",
 	"compress",
@@ -23,9 +23,9 @@
 	    "url": "http://wirywolf.com"
 	}
     ],
-    "main": "lib/index",
+    "main": "index",
     "bin": {
-	"optipng-stream": "bin/optipng-stream.js"
+	"optipng-stream": "bin/optipng-stream"
     },
     "repository": {
 	"type": "git",
@@ -53,7 +53,6 @@
 	"multipipe": "*"
     },
     "files": [
-	"bin",
-	"lib"
+	"bin"
     ]
 }
