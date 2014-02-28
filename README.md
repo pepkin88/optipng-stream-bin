@@ -3,10 +3,10 @@ This is a wrapper around [node-optipng-bin](https://github.com/yeoman/node-optip
 ## Usage
 
 	var spawn = require('child_process').spawn;
-	var optipng-stream = require('optipng-stream').path;
+	var optipng-stream-bin = require('optipng-stream-bin').path;
 	var fs = require('fs');
 
-	var proc = spawn(optipng-stream, ["-o3"]);
+	var proc = spawn(optipng-stream-bin, ["-o3"]);
 
 	fs.createReadStream('input.png')
 	.pipe(proc.stdin);
