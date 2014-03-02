@@ -16,3 +16,7 @@ This is a wrapper around [node-optipng-bin](https://github.com/yeoman/node-optip
 	.pipe(proc.stdin);
 
 	proc.stdout.pipe(fs.createWriteStream('output.png'));
+
+## License
+
+MIT © [Amey Parulekar](http://wirywolf.com)
