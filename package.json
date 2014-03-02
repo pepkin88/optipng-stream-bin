@@ -1,6 +1,6 @@
 {
     "name": "optipng-stream-bin",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "description": "Wrapper around optipng-bin for reading PNG data from STDIN and writing optimized output to STDOUT",
     "keywords": [
 	"png",
@@ -54,6 +54,7 @@
 	"multipipe": "*"
     },
     "files": [
-	"bin"
+	"bin",
+	"index.js"
     ]
 }
