@@ -1,6 +1,6 @@
 {
     "name": "optipng-stream-bin",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "description": "Wrapper around optipng-bin for use with stdin/stdout",
     "keywords": [
         "compress",
